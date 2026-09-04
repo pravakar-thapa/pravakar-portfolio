@@ -1,61 +1,423 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Pravakar Thapa | Frontend Developer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pravakar Thapa - Software Developer portfolio"
+    />
+    <title>Pravakar Thapa | Software Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <header class="hero">
-    <h1>Pravakar Thapa</h1>
-    <p>Frontend / Web Developer (Entry-Level)</p>
-  </header>
+  <body>
+    <!-- Navigation -->
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a BCA graduate and aspiring Frontend Developer with hands-on
-      experience building responsive websites using HTML5 and CSS3.
-      Currently expanding my skills in JavaScript.
-    </p>
-  </section>
+    <nav class="navbar">
+      <a href="#" class="logo">PT<span>.</span></a>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>Responsive Web Design</li>
-      <li>Flexbox & CSS Grid</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
+      ```
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      ```
+    </nav>
 
-  <section class="projects">
-    <h2>Projects</h2>
+    <!-- Hero -->
 
-    <div class="project-card">
-      <h3>Responsive Landing Page</h3>
-      <p>Built using HTML5 and CSS3 with responsive layout design.</p>
-    </div>
+    <header class="hero">
+      <div class="hero-content">
+        ```
+        <p class="eyebrow">SOFTWARE DEVELOPER</p>
 
-    <div class="project-card">
-      <h3>Sunset Resort Feedback Portal</h3>
-      <p>Hotel feedback web application with structured forms and clean UI.</p>
-    </div>
-  </section>
+        <h1>Hi, I'm <span>Pravakar Thapa</span></h1>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: pravakar.thapa.dev@gmail.com</p>
-    <p>GitHub: github.com/pravakar-thapa</p>
-    <p>LinkedIn: linkedin.com/in/your-link</p>
-  </section>
+        <p class="hero-description">
+          I build full-stack web applications and user-focused solutions using
+          React.js, Node.js, Express.js and MongoDB.
+        </p>
 
-  <footer>
-    <p>© 2026 Pravakar Thapa</p>
-  </footer>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View My Work</a>
+          <a
+            href="https://github.com/pravakar-thapa"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn secondary"
+          >
+            GitHub
+          </a>
+        </div>
 
-</body>
+        <div class="hero-location">📍 Darjeeling, India</div>
+      </div>
+      ```
+    </header>
+
+    <!-- About -->
+
+    <section id="about" class="section about">
+      <div class="section-heading">
+        <p class="section-label">ABOUT ME</p>
+        <h2>Building things that solve real problems.</h2>
+      </div>
+
+      ```
+      <div class="about-content">
+        <p>
+          I'm a Software Developer and BCA graduate with hands-on experience
+          building and deploying full-stack web applications.
+        </p>
+
+        <p>
+          I work primarily with React.js, Node.js, Express.js and MongoDB, with
+          experience building REST APIs, authentication systems, role-based
+          access control and responsive web interfaces.
+        </p>
+
+        <p>
+          I enjoy learning through practical projects and continuously improving
+          my software engineering skills.
+        </p>
+      </div>
+      ```
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills" class="section skills-section">
+      <div class="section-heading">
+        <p class="section-label">TECHNICAL SKILLS</p>
+        <h2>Technologies I work with.</h2>
+      </div>
+
+      ```
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="tags">
+            <span>React.js</span>
+            <span>Vite</span>
+            <span>Tailwind CSS</span>
+            <span>Framer Motion</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="tags">
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>REST APIs</span>
+            <span>CRUD Operations</span>
+            <span>MVC Architecture</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Database</h3>
+          <div class="tags">
+            <span>MongoDB</span>
+            <span>Mongoose</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Authentication & Security</h3>
+          <div class="tags">
+            <span>JWT</span>
+            <span>RBAC</span>
+            <span>CORS</span>
+            <span>Helmet</span>
+            <span>Rate Limiting</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Cloud & Deployment</h3>
+          <div class="tags">
+            <span>Cloudinary</span>
+            <span>Vercel</span>
+            <span>Netlify</span>
+            <span>Render</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="tags">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Postman</span>
+          </div>
+        </div>
+      </div>
+      ```
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects" class="section projects-section">
+      <div class="section-heading">
+        <p class="section-label">SELECTED WORK</p>
+        <h2>Projects I've built.</h2>
+      </div>
+
+      ```
+      <div class="projects-grid">
+        <!-- Question Papers -->
+        <article class="project-card featured">
+          <div class="project-top">
+            <span class="project-number">01</span>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/pravakar-thapa/question-papers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://question-papers-sable.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+
+          <h3>Question Papers Platform</h3>
+
+          <p>
+            A full-stack MERN platform for sharing and managing question papers
+            with authentication, uploads, moderation and nested comments.
+          </p>
+
+          <ul class="project-features">
+            <li>20+ REST API endpoints</li>
+            <li>JWT authentication & RBAC</li>
+            <li>Admin moderation system</li>
+            <li>Cloudinary PDF uploads</li>
+            <li>Server-side validation</li>
+          </ul>
+
+          <div class="project-tech">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>Cloudinary</span>
+          </div>
+        </article>
+
+        <!-- Weather -->
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-number">02</span>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/pravakar-thapa/weather-application"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://weatherinhere.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+
+          <h3>Weather App</h3>
+
+          <p>
+            Responsive weather application using a third-party REST API to
+            display real-time weather conditions and dynamic updates.
+          </p>
+
+          <ul class="project-features">
+            <li>Real-time weather data</li>
+            <li>Async/await API communication</li>
+            <li>Error handling</li>
+            <li>Responsive interface</li>
+          </ul>
+
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>React.js</span>
+            <span>REST API</span>
+          </div>
+        </article>
+
+        <!-- GitHub Projects -->
+        <article class="project-card github-card">
+          <div class="github-icon">⌘</div>
+
+          <h3>More on GitHub</h3>
+
+          <p>Explore my other projects, experiments and work on GitHub.</p>
+
+          <a
+            href="https://github.com/pravakar-thapa"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-button"
+          >
+            View GitHub Profile →
+          </a>
+        </article>
+      </div>
+      ```
+    </section>
+
+    <!-- Achievements -->
+
+    <section class="section achievements">
+      <div class="section-heading">
+        <p class="section-label">ACHIEVEMENTS</p>
+        <h2>What I've accomplished.</h2>
+      </div>
+
+      ```
+      <div class="achievement-grid">
+        <div class="achievement">
+          <strong>6+</strong>
+          <span>Web applications built and deployed</span>
+        </div>
+
+        <div class="achievement">
+          <strong>20+</strong>
+          <span>REST API endpoints in Question Papers</span>
+        </div>
+
+        <div class="achievement">
+          <strong>MERN</strong>
+          <span>Full-stack development experience</span>
+        </div>
+
+        <div class="achievement">
+          <strong>2024</strong>
+          <span>BCA Graduate</span>
+        </div>
+      </div>
+      ```
+    </section>
+
+    <!-- Experience -->
+
+    <section class="section experience">
+      <div class="section-heading">
+        <p class="section-label">EXPERIENCE</p>
+        <h2>My experience.</h2>
+      </div>
+
+      ```
+      <div class="experience-card">
+        <div>
+          <h3>Music Instructor</h3>
+          <p class="muted">Part-time</p>
+        </div>
+
+        <div class="experience-description">
+          <p>
+            Delivered structured music lessons while developing strong
+            communication and mentoring skills.
+          </p>
+
+          <p>
+            Planned lesson schedules and adapted teaching methods to different
+            learning styles.
+          </p>
+
+          <p>
+            Built strong interpersonal and presentation skills through
+            one-on-one student instruction.
+          </p>
+        </div>
+      </div>
+      ```
+    </section>
+
+    <!-- Education -->
+
+    <section class="section education">
+      <div class="section-heading">
+        <p class="section-label">EDUCATION</p>
+        <h2>Education.</h2>
+      </div>
+
+      ```
+      <div class="education-card">
+        <div>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>Acharya Institute of Graduate Studies</p>
+          <p>Bangalore University</p>
+        </div>
+
+        <span>2024</span>
+      </div>
+      ```
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="section contact">
+      <p class="section-label">GET IN TOUCH</p>
+
+      ```
+      <h2>Let's build something.</h2>
+
+      <p>
+        I'm open to software development opportunities and interesting projects.
+        Feel free to reach out.
+      </p>
+
+      <a href="mailto:pravakar.thapa.dev@gmail.com" class="email-link">
+        pravakar.thapa.dev@gmail.com
+      </a>
+
+      <div class="social-links">
+        <a
+          href="https://github.com/pravakar-thapa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://linkedin.com/in/pravakarthapa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+      ```
+    </section>
+
+    <footer>
+      <p>© 2026 Pravakar Thapa</p>
+
+      ```
+      <a href="#">Back to top ↑</a>
+      ```
+    </footer>
+  </body>
 </html>
