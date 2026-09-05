@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #08080a;
+  --color-surface: #111114;
+  --color-elevated: #18181c;
+  --color-fg: #f4f1ea;
+  --color-fg-muted: #9b978e;
+  --color-fg-subtle: #6f6c64;
+  --color-primary: #c5d1bf;
+  --color-primary-fg: #0c0d0b;
+  --color-border: #26262b;
+  --color-ring: #c5d1bf;
+
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas,
+    monospace;
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  --shadow-border: 0 0 0 1px rgb(255 255 255 / 0.08);
+  --shadow-border-hover: 0 0 0 1px rgb(255 255 255 / 0.14);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-primary-fg);
+  }
+}
+
+@utility page-wrap {
+  width: min(70rem, calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+@media (max-width: 480px) {
+  .page-wrap {
+    width: min(70rem, calc(100% - 2rem));
+  }
+}
